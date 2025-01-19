@@ -2,21 +2,21 @@ import cv from "../data/cv.mjs";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-4">
+    <main className="flex flex-col max-w-xl mx-auto">
       <h1 className="flex flex-col">
         <span>{cv.title}</span>
         <small>{cv.name}</small>
       </h1>
 
-      <section className="flex flex-col gap-y-2">
+      <section>
         {cv.summary.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </section>
 
-      <section className="flex flex-col gap-y-2">
+      <section>
         <h2>Experience</h2>
-        <ol className="flex flex-col gap-y-2">
+        <ol>
           {cv.experience.map((exp, index) => (
             <li key={index}>
               <h3 className="flex flex-col mb-1">
@@ -33,9 +33,9 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="flex flex-col gap-y-2">
+      <section>
         <h2>Education</h2>
-        <ol className="flex flex-col gap-y-2">
+        <ol>
           {cv.education.map((ed, index) => (
             <li key={index}>
               <h3 className="flex flex-col mb-1">
