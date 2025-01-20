@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 const avenue = localFont({
   src: "./font/Avenue.otf",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         className={`${avenue.variable} antialiased container mx-auto px-4 py-8 `}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

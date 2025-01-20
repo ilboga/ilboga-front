@@ -30,9 +30,7 @@ export default function Home() {
               <div>
                 {exp.position}
                 {` `}
-                <span className="text-gray-600 dark:text-red-500">
-                  {exp.company}
-                </span>
+                <span className="text-gray-600">{exp.company}</span>
               </div>
               <div className="text-gray-600">{exp.duration}</div>
             </li>
