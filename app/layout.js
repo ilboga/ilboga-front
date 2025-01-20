@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body
-        className={`${avenue.variable} antialiased container mx-auto px-4 py-8`}
+        className={`${avenue.variable} antialiased container mx-auto px-4 py-8 `}
       >
         {children}
       </body>

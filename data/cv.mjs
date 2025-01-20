@@ -4,7 +4,7 @@ const cv = {
   summary: [
     "I am an IT manager who believes in an inclusive and accessible web. For years, I have been working on creating interfaces that are not only aesthetically pleasing and easy to use but also ensure equitable access for every user, regardless of their abilities or the devices they use.",
     "I work closely with developers, designers, and product managers to translate ideas into high-quality digital experiences. I enjoy being part of the creative and strategic process, ensuring that the technologies and methods we use enable the team to achieve the desired results.",
-    "I am 38 years old, a father of two, and the partner of Domenica, the woman I love. Born and raised in Como, I currently live in Turin, after spending several years in Amsterdam. I hold a degree in Digital Communication from the University of Milan.",
+    "I am 38 years old, a father of two, and the partner of Domenica, the woman I love. Born and raised in Como, I currently live in Turin, after spending several years in Amsterdam. <br> I hold a degree in Digital Communication from the University of Milan.",
   ],
   contact: {
     email: "michaeboganil@gmail.com",
@@ -23,9 +23,13 @@ const cv = {
     "MySQL",
     "a11y",
   ],
+  experience_summary: [
+    "Having held various roles in the IT field has allowed me to build a strong technical and managerial skill set, developed through experiences ranging from front-end and back-end development to leading development teams. This journey has equipped me to successfully handle every aspect of the technology project lifecycle, from strategy definition to implementation, always ensuring a focus on quality, performance, and accessibility.",
+    'My experience at <a href="https://www.promemoriagroup.com/" target="_blank"> Promemoria group</a> has been instrumental in shaping the expertise I bring today, enabling me to craft innovative solutions, lead teams toward growth, and develop technological products that meet the needs of users and stakeholders from major companies, all while upholding high technical and design standards. This journey has equipped me to excel as a versatile professional, ready to tackle the challenges of an ever-evolving industry.',
+  ],
   experience: [
     {
-      company: "Promemoriagroup",
+      company: "Promemoria group",
       position: "Head of technology",
       duration: "Jan 2021 - Present",
       responsibilities: [
@@ -37,7 +41,7 @@ const cv = {
       ],
     },
     {
-      company: "Promemoriagroup",
+      company: "Promemoria group",
       position: "Lead Front end developer",
       duration: "Oct 2014 - Dec 2020",
       responsibilities: [

@@ -2,38 +2,45 @@ import cv from "../data/cv.mjs";
 
 export default function Home() {
   return (
-    <main className="flex flex-col max-w-xl mx-auto">
-      <h1 className="flex flex-col">
+    <main className="flex flex-col max-w-xl mx-auto gap-y-8">
+      <h1 className="flex flex-col gap-y-3">
         <span>{cv.title}</span>
         <small>{cv.name}</small>
       </h1>
 
-      <section>
+      <section className="flex flex-col gap-y-3">
         {cv.summary.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p dangerouslySetInnerHTML={{ __html: paragraph }} key={index}></p>
         ))}
       </section>
 
-      <section>
-        <h2>Experience</h2>
+      <section className="flex flex-col gap-y-3">
+        <h2>Work</h2>
+        <div className="flex flex-col gap-y-3">
+          {cv.experience_summary.map((paragraph, index) => (
+            <p dangerouslySetInnerHTML={{ __html: paragraph }} key={index}></p>
+          ))}
+        </div>
         <ol>
           {cv.experience.map((exp, index) => (
-            <li key={index}>
-              <h3 className="flex flex-col mb-1">
-                {exp.position} at {exp.company}
-                <small>{exp.duration}</small>
-              </h3>
-              <ul className="ml-3 gap-y-1">
-                {exp.responsibilities.map((resp, index) => (
-                  <li key={index}>{resp}</li>
-                ))}
-              </ul>
+            <li
+              key={index}
+              className="flex justify-between items-center gap-y-2"
+            >
+              <div>
+                {exp.position}
+                {` `}
+                <span className="text-gray-600 dark:text-red-500">
+                  {exp.company}
+                </span>
+              </div>
+              <div className="text-gray-600">{exp.duration}</div>
             </li>
           ))}
         </ol>
       </section>
 
-      <section>
+      <section className="flex flex-col gap-y-3">
         <h2>Education</h2>
         <ol>
           {cv.education.map((ed, index) => (
@@ -48,12 +55,6 @@ export default function Home() {
           ))}
         </ol>
       </section>
-
-      <ul className="flex gap-x-2">
-        {cv.skills.map((skill, index) => (
-          <li key={index}>{skill}</li>
-        ))}
-      </ul>
     </main>
   );
 }
