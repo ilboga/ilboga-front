@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 const avenue = localFont({
   src: "./font/Avenue.otf",
@@ -16,6 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="it">
+      <head>
+        <Script
+          defer
+          data-domain="ilboga.dev"
+          src="https://plausible.io/js/script.js"
+        ></Script>
+      </head>
       <body
         className={`${avenue.variable} antialiased container mx-auto px-4 py-8 `}
       >
