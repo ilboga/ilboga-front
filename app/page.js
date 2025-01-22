@@ -21,17 +21,14 @@ export default function Home() {
             <p dangerouslySetInnerHTML={{ __html: paragraph }} key={index}></p>
           ))}
         </div>
-        <ol>
+        <ol className="flex flex-col gap-y-2">
           {cv.experience.map((exp, index) => (
-            <li
-              key={index}
-              className="flex justify-between items-center gap-y-2"
-            >
-              <div>
-                {exp.position}
-                {` `}
+            <li key={index} className="flex justify-between items-end ">
+              <div className="flex flex-col lg:flex-row gap-x-2">
+                <span>{exp.position}</span>
                 <span className="text-gray-600">{exp.company}</span>
               </div>
+              <div className="hidden lg:flex flex-grow border-t border-dashed border-gray-600 h-1 mx-2 mb-1"></div>
               <div className="text-gray-600">{exp.duration}</div>
             </li>
           ))}
