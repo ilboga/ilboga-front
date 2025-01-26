@@ -12,7 +12,7 @@ const cv = {
       label: "linkedin",
     },
     {
-      link: "github.com/ilboga",
+      link: "https://github.com/ilboga",
       label: "github",
     },
     {
