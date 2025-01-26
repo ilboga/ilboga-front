@@ -6,10 +6,20 @@ const cv = {
     "I work closely with developers, designers, and product managers to translate ideas into high-quality digital experiences. I enjoy being part of the creative and strategic process, ensuring that the technologies and methods we use enable the team to achieve the desired results.",
     "I am 38 years old, a father of two, and the partner of Domenica, the woman I love. Born and raised in Como, I currently live in Turin, after spending several years in Amsterdam. <br> I hold a degree in Digital Communication from the University of Milan.",
   ],
-  contact: {
-    email: "michaeboganil@gmail.com",
-    linkedIn: "linkedin.com/in/michaelbogani",
-  },
+  contacts: [
+    {
+      link: "https://linkedin.com/in/michaelbogani",
+      label: "linkedin",
+    },
+    {
+      link: "github.com/ilboga",
+      label: "github",
+    },
+    {
+      email: "michaeboganil@gmail.com",
+      label: "old fashion email",
+    },
+  ],
   skills: [
     "HTML",
     "CSS",
