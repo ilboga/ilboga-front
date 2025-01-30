@@ -53,7 +53,7 @@ const cv = {
     {
       company: "Promemoria group",
       position: "Lead Front end developer",
-      duration: "Oct 2014 - Dec 2020",
+      duration: "Oct 2014 - Jan 2021",
       responsibilities: [
         "Build websites with Vue.js, HTML and CSS",
         "Integration of data coming from MongoDB and Firebase",
@@ -63,7 +63,7 @@ const cv = {
     },
     {
       company: "Urbano creativo",
-      position: "Project Manager",
+      position: "Full stack developer",
       duration: "Nov 2012 - Oct 2014",
       responsibilities: [
         "Front end developer",
