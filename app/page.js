@@ -2,16 +2,21 @@
 import cv from "../data/cv.mjs";
 import mailgo from "mailgo";
 import { useEffect } from "react";
+import Pixelate from "./components/pixelate";
 export default function Home() {
   useEffect(() => {
     mailgo();
   }, []);
+
   return (
     <main className="flex flex-col max-w-xl mx-auto gap-y-8">
       <h1 className="flex flex-col gap-y-3">
         <span>{cv.title}</span>
         <small>{cv.name}</small>
       </h1>
+
+      <div></div>
+      <Pixelate src="./me.webp" alt="A pixelate picture of me" />
 
       <section className="flex flex-col gap-y-3">
         {cv.summary.map((paragraph, index) => (
